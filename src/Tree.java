@@ -2,10 +2,6 @@ import java.io.File;
 
 public class Tree {
 
-    /**
-     * TODO: Доработать метод print, необходимо распечатывать директории и файлы
-     * @param args
-     */
     public static void main(String[] args) {
         print(new File("."), "", true);
     }
@@ -44,10 +40,6 @@ public class Tree {
             {
                 print(files[i], indent, subDirTotal == ++subDirCounter);
             }
-//            else if (files[i].isFile()) {
-//                System.out.println(files[i].getName());
-//            }
-
         }
     }
 

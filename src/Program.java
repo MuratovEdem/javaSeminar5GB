@@ -3,8 +3,8 @@ import java.io.*;
 public class Program {
     public static void main(String[] args) throws IOException {
 
-        String location = "./from"; //File path you are getting from file chooser
-        String target = "./backup"; //target place you want to patse
+        String location = "./from";
+        String target = "./backup";
         File locationFile = new File(location);
         File targetFile = new File(target);
         copyDirectory(locationFile, targetFile);
